@@ -57,6 +57,12 @@
       .new-post-btn:hover {
         background-color: #219150;
       }
+      .post-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 8px;
+      }
     </style>
   </head>
   <body>
@@ -67,8 +73,11 @@
       <li>
         <a href="{% url 'post_detail' post.pk %}">
           {{ post.title }}<br />
-          <small>{{ post.created_at }}</small>
+          <small>{{ post.created_date }}</small>
         </a>
+        {% if post.image %}
+          <img src="{{ post.image.url }}" class="post-image" alt="{{ post.title }}">
+        {% endif %}
       </li>
       {% empty %}
       <li>No posts yet.</li>
