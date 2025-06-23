@@ -1,1 +1,22 @@
 myvenv
+# /home/junhwan00/Django_project/mysite/.gitignore 파일 편집 (없다면 생성)
+# Bash 콘솔에서 다음 명령어로 편집기를 열 수 있습니다:
+# nano .gitignore  (Ctrl+X, Y, Enter 로 저장)
+# 또는
+# vim .gitignore (i 눌러서 편집, Esc, :wq 로 저장)
+
+# 데이터베이스 파일
+*.sqlite3
+
+# 파이썬 캐시 파일
+__pycache__/
+*.pyc
+
+# 가상 환경 폴더 (PythonAnywhere에서 mkvirtualenv로 생성했다면 로컬 venv와는 다름)
+# 만약 로컬 venv가 Git에 추가되어 있다면 제거해야 합니다.
+venv/
+.venv/
+
+# 기타 IDE 설정 파일 등
+.vscode/
+*.log
