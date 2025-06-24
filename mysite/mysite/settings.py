@@ -129,3 +129,14 @@ MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_ROOT = '/home/byeongmin/mysite/static'
 STATIC_URL = '/static/'
 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog', # 기존 블로그 앱
+    'api',  # 새로 추가한 API 앱
+    'rest_framework', # Django REST Framework (pip install djangorestframework 필요)
+]
