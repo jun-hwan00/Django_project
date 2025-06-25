@@ -12,6 +12,8 @@ myvenv
 __pycache__/
 *.pyc
 
+*.pyo
+*.pyd
 # 가상 환경 폴더 (PythonAnywhere에서 mkvirtualenv로 생성했다면 로컬 venv와는 다름)
 # 만약 로컬 venv가 Git에 추가되어 있다면 제거해야 합니다.
 venv/
@@ -20,3 +22,6 @@ venv/
 # 기타 IDE 설정 파일 등
 .vscode/
 *.log
+/myvenv/
+/media/
+/staticfiles/
